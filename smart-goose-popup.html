@@ -1,0 +1,29 @@
+<!-- START SMART GOOSE POPUP -->
+<div id="smart-goose-popup" class="smart-goose-popup">
+	<div class="smart-goose-popup__container">
+		<div class="smart-goose-popup__close-btn" onclick="smart_goose.hide_popup();"></div>
+		<div class="smart-goose-popup__form">
+			<form onsubmit="smart_goose.send_form(this); return false;">
+				<h3 class="smart-goose-popup__title"></h3>
+				<div class="smart-goose-popup__form-group">
+					<label for="smart-goose-popup-name">Введите имя:</label>
+					<input type="text" name="name" class="input input-name form-control" id="smart-goose-popup-name">
+				</div>
+				<div class="smart-goose-popup__form-group">
+					<label for="smart-goose-popup-phone">Введите телефон: <span class="color-red">*</span></label>
+					<input type="text" name="phone" class="input input-phone input-phone-mask form-control" id="smart-goose-popup-phone" required minlength="17">
+				</div>
+				<div class="smart-goose-popup__form-error-block color-red"></div>
+				<div class="smart-goose-popup__button-block">
+					<button type="submit" class="btn btn-primary"></button>
+				</div>
+			</form>
+		</div>
+
+		<div class="smart-goose-popup__thanks">
+			<h3 class="smart-goose-popup__thanks__title"></h3>
+			<div class="smart-goose-popup__thanks__text"></div>
+		</div>
+	</div>
+</div>
+<!-- END SMART GOOSE POPUP -->
