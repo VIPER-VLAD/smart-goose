@@ -1,11 +1,11 @@
 <?php
 	$config = [
 		'recipients' => [
-			'vlad.052898@gmail.com'
+			'myemail@gmail.com'
 		],
 		'email' => [
 			'subject' => 'Новая заявка на звонок',
-			'from' => 'notification@360.bi-group.org',
+			'from' => 'info@site.com',
 			'from_name' => '',
 			'message_template' => "{$_SERVER['DOCUMENT_ROOT']}/smart-goose/email-template.html"
 		],
